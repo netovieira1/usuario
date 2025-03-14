@@ -1,4 +1,4 @@
-package com.cadastro.usuario.controllers.usuarios;
+package com.cadastro.usuario.controllers.produtos;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping
-public class UsuarioController {
+public class ProdutosController {
 
-    @GetMapping("/boasvindas")
-    public String boasVindas() {
-            return "Primeira mensagem nessa rota";
-        }
+    @GetMapping("/produtos")
+    public String produto(){
+        return "Produtos";
+    }
 }
